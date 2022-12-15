@@ -4,7 +4,7 @@ terraform {
     hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
 
     workspaces {
-      tags = ["terraex", "source:cli"]
+      tags = ["ws-a87NJ8wcbK11tqUp", "source:cli"]
     }
   }
 }
