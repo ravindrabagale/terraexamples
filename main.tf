@@ -14,6 +14,8 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
+  access_key= var.access_key
+  secret_key= var.secret_key
 }
 resource "aws_instance" "example" {
   ami                    = "ami-074dc0a6f6c764218"
@@ -55,8 +57,14 @@ resource "aws_security_group" "instance" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
- 
 
  
 
+}
+
+variable "access_key" {
+  description = "The port the server will use for HTTP requests"
+}
+variable "secret_key" {
+  description = "The port the server will use for HTTP requests"
 }
